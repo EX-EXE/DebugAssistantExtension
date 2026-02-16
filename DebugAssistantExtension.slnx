@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DebugAssistantExtension/DebugAssistantExtension.csproj">
+      <Deploy />
+    </Project>
+  </Folder>
+</Solution>

@@ -1,0 +1,12 @@
+{
+  "DebugAssistantExtension.DebugAssistant.DisplayName": "Debug Assistant",
+  "DebugAssistantExtension.LocalVariable.DisplayName": "Local Variable",
+
+  "DebugAssistantExtension.Enable.DisplayName": "Enable",
+  "DebugAssistantExtension.MaxDepth.DisplayName": "Max Depth",
+  "DebugAssistantExtension.MaxReadMemorySize.DisplayName": "Max Read Memory Size",
+
+  "DebugAssistantExtension.Menu.DisplayName": "Debug Assistant",
+  "DebugAssistantExtension.ShowLocalVariablesCommand.DisplayName": "Local Variables",
+  "DebugAssistantExtension.ShowLicenseCommand.DisplayName": "License"
+}

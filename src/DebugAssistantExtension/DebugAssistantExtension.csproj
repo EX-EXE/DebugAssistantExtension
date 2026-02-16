@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+    <UseWPF>true</UseWPF>
+
+    <VssdkCompatibleExtension>true</VssdkCompatibleExtension>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Page Remove="Licenses\LicensesWindow.xaml" />
+    <Page Remove="LocalVariables\LocalVariablesWindow.xaml" />
+    <EmbeddedResource Include="Licenses\LicensesWindow.xaml" />
+    <EmbeddedResource Include="LocalVariables\LocalVariablesWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.14.40608" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.40608" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" />
+    <PackageReference Include="ObservableCollections.R3" Version="3.3.4" />
+    <PackageReference Include="R3Extensions.WPF" Version="1.3.0" />
+  </ItemGroup>
+</Project>

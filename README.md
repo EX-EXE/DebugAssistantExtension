@@ -1,0 +1,8 @@
+# Debug Assistant Extension
+
+## Overview
+The Debug Assistant Extension is a Visual Studio extension.  
+It provides tools to enhance the debugging experience.
+
+## Features
+- **Local Variables**: A tool for displaying local variable values ​​and memory while debugging.(C++ Only)
