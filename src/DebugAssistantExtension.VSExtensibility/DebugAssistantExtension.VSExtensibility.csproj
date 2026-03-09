@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NeutralLanguage>en-US</NeutralLanguage>
+
+    <!-- VSIX -->
+    <AssemblyVSIXSubPath>VSExtensibility</AssemblyVSIXSubPath>
+    <CreateVsixContainer>false</CreateVsixContainer>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Remove="Licenses\LicensesWindow.xaml" />
+    <EmbeddedResource Include="Licenses\LicensesWindow.xaml">
+    </EmbeddedResource>
+    <None Remove="LocalVariables\LocalVariablesWindow.xaml" />
+    <EmbeddedResource Include="LocalVariables\LocalVariablesWindow.xaml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryVisualizers\MemoryVisualizerWindow.xaml">
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\DebugAssistantExtension\Shared\**\*.cs">
+      <Link>Shared\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Debugger.Engine" Version="17.14.1051801" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.14.40608" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.40608" PrivateAssets="all" />
+    <PackageReference Include="ObservableCollections.R3" Version="3.3.4" />
+    <PackageReference Include="R3" Version="1.3.0" />
+  </ItemGroup>
+</Project>

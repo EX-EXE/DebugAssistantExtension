@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <UIVisualizer ServiceId="{89B79ADC-DA27-499C-A437-88138475AD37}" Id="1" MenuName="Memory Visualizer"/>
+
+  <Type Name="const char *">
+    <UIVisualizer ServiceId="{89B79ADC-DA27-499C-A437-88138475AD37}" Id="1" />
+  </Type>
+</AutoVisualizer>

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DebugAssistantExtension.Extensions;
+namespace DebugAssistantExtension.VSSDK.Extensions;
 
 public static class DebugPropertyExtension
 {

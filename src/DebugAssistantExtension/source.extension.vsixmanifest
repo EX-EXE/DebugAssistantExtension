@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="DebugAssistantExtension.16618873-8140-4f14-bddd-a069560e0780" Version="1.0" Language="en-US" Publisher="Publisher name" />
+    <Identity Id="DebugAssistantExtension.30016d8f-6182-46d0-a972-d26dec3a7710" Version="1.0" Language="en-US" Publisher="Publisher name" />
     <DisplayName>DebugAssistantExtension</DisplayName>
     <Description>VisualStudio.Extensibility Extension with VSSDK Compatibility.</Description>
     <Preview>true</Preview>
   </Metadata>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="NativeVisualizer" Path="MemoryVisualizers\MemoryVisualizer.natvis" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="DebugAssistantExtension.Shared" />
+  </Assets>
   <Installation ExtensionType="VSSDK+VisualStudio.Extensibility">
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14,)">
       <ProductArchitecture>amd64</ProductArchitecture>
@@ -14,9 +19,6 @@
       <ProductArchitecture>arm64</ProductArchitecture>
     </InstallationTarget>
   </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-  </Dependencies>
   <Prerequisites>
     <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
   </Prerequisites>

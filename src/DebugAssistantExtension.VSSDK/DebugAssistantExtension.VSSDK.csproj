@@ -10,6 +10,10 @@
     <VssdkCompatibleExtension>true</VssdkCompatibleExtension>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
+
+    <!-- VSIX -->
+    <AssemblyVSIXSubPath>VSSDK</AssemblyVSIXSubPath>
+    <CreateVsixContainer>false</CreateVsixContainer>
   </PropertyGroup>
   
   <ItemGroup>
@@ -22,25 +26,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Debugger.Engine" Version="17.14.1051801" />
     <PackageReference Include="Microsoft.VisualStudio.DebuggerVisualizers" Version="17.6.1032901" />
 
+
     <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.40608" PrivateAssets="all" />
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DebugAssistantExtension.VSExtensibility\DebugAssistantExtension.VSExtensibility.csproj">
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
-      <IncludeInVSIX>true</IncludeInVSIX>
-      <IncludeOutputGroupsInVSIX>ExtensionFilesOutputGroup</IncludeOutputGroupsInVSIX>
-    </ProjectReference>
+    <ProjectReference Include="..\DebugAssistantExtension.Shared\DebugAssistantExtension.Shared.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="System.ComponentModel.Composition" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <VSIXSourceItem Include="..\DebugAssistantExtension.VSExtensibility\bin\$(Configuration)\net8.0-windows8.0\.vsextension\extension.json" VsixSubPath=".vsextension" />
-  </ItemGroup>
-  
 </Project>

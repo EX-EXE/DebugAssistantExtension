@@ -1,7 +1,6 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="src/DebugAssistantExtension/DebugAssistantExtension.csproj">
-      <Deploy />
-    </Project>
+    <Project Path="src/DebugAssistantExtension.VSExtensibility/DebugAssistantExtension.VSExtensibility.csproj" Id="79a26aa4-d5ef-4fc6-b407-ba7c47708212" />
+    <Project Path="src/DebugAssistantExtension/DebugAssistantExtension.csproj" Id="5397823e-8b8d-4066-8a63-d55b928d4896" />
   </Folder>
 </Solution>

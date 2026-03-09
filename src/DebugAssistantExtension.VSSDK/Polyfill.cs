@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 #if !NET5_0_OR_GREATER
-namespace System.Runtime.CompilerServices
+namespace DebugAssistantExtension.VSSDK
 {
     internal class IsExternalInit { }
 }
